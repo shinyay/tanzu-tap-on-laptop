@@ -23,6 +23,9 @@
   - 8 threads
   - 16 GB of RAM
   - 40 GB of free disk space.
+- Software
+  - Minikube
+  - Kubectl
 
 ## References
 
