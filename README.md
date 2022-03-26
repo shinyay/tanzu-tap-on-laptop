@@ -17,7 +17,7 @@
 
 ## Installation
 
-### Prerequisite
+### 0. Prerequisite
 
 - Hardware
   - 8 threads
@@ -29,6 +29,8 @@
 - Account
   - [Docker Hub](https://hub.docker.com/)
   - [Tanzu Network](https://network.tanzu.vmware.com/)
+
+### 1. Download and Install the Tanzu CLI
 
 ## References
 
