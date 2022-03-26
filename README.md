@@ -17,6 +17,13 @@
 
 ## Installation
 
+### Prerequisite
+
+- Hardware
+  - 8 threads
+  - 16 GB of RAM
+  - 40 GB of free disk space.
+
 ## References
 
 ## Licence
