@@ -26,6 +26,9 @@
 - Software
   - Minikube
   - Kubectl
+- Account
+  - [Docker Hub](https://hub.docker.com/)
+  - [Tanzu Network](https://network.tanzu.vmware.com/)
 
 ## References
 
