@@ -152,6 +152,19 @@ Check the current state
 kubectl get pods -o wide --all-namespaces
 ```
 
+### 4. Install the Tanzu Application Platform onto Minikube
+
+```shell
+# Create Tanzu Application Platform Install Environment Variables
+set -x TAP_VERSION "1.0.2"
+set -x TAP_NAMESPACE "tap-install"
+
+# Set the developer’s ‘push’ capable docker container registry details
+set -x DOCKER_SERVER "https://index.docker.io/v1/"
+set -x DOCKER_USERNAME '' # < insert your docker username
+set -x DOCKER_PASSWORD '' # < insert your docker password
+```
+
 ## References
 
 ## Licence
