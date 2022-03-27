@@ -51,6 +51,15 @@ cd $HOME/tanzu
 sudo install cli/core/v0.11.1/tanzu-core-darwin_amd64  /usr/local/bin/tanzu
 ```
 
+```shell
+tanzu version
+```
+
+```shell
+version: v0.11.1
+buildDate: 2022-02-14
+sha: 4d578570
+```
 
 ## References
 
