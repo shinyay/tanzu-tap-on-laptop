@@ -143,6 +143,19 @@ set -x INSTALL_REGISTRY_USERNAME <tanzunet-username>
 set -x INSTALL_REGISTRY_PASSWORD <tanzunet-password>
 ```
 
+Before install.sh
+
+```shell
+NAMESPACE     NAME                               READY   STATUS    RESTARTS        AGE
+kube-system   coredns-78fcd69978-52ss9           1/1     Running   0               3m43s
+kube-system   etcd-minikube                      1/1     Running   0               3m56s
+kube-system   kube-apiserver-minikube            1/1     Running   0               3m58s
+kube-system   kube-controller-manager-minikube   1/1     Running   0               3m57s
+kube-system   kube-proxy-dp68m                   1/1     Running   0               3m44s
+kube-system   kube-scheduler-minikube            1/1     Running   0               3m57s
+kube-system   storage-provisioner                1/1     Running   1 (3m13s ago)   3m55s
+```
+
 ```shell
 cd $HOME/tanzu/essential
 ./install.sh
@@ -152,6 +165,19 @@ Check the current state
 
 ```shell
 kubectl get pods -o wide --all-namespaces
+```
+
+```shell
+NAMESPACE              NAME                                    READY   STATUS    RESTARTS        AGE
+kapp-controller        kapp-controller-57645fd7bc-zl5fc        1/1     Running   0               61s
+kube-system            coredns-78fcd69978-52ss9                1/1     Running   0               5m29s
+kube-system            etcd-minikube                           1/1     Running   0               5m42s
+kube-system            kube-apiserver-minikube                 1/1     Running   0               5m44s
+kube-system            kube-controller-manager-minikube        1/1     Running   0               5m43s
+kube-system            kube-proxy-dp68m                        1/1     Running   0               5m30s
+kube-system            kube-scheduler-minikube                 1/1     Running   0               5m43s
+kube-system            storage-provisioner                     1/1     Running   1 (4m59s ago)   5m41s
+secretgen-controller   secretgen-controller-5cd48899cd-7kzq4   1/1     Running   0               18s
 ```
 
 ### 4. Install the Tanzu Application Platform onto Minikube
