@@ -146,6 +146,12 @@ cd $HOME/tanzu/essential
 ./install.sh
 ```
 
+Check the current state
+
+```shell
+kubectl get pods -o wide --all-namespaces
+```
+
 ## References
 
 ## Licence
