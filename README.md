@@ -30,15 +30,19 @@
   - [Docker Hub](https://hub.docker.com/)
   - [Tanzu Network](https://network.tanzu.vmware.com/)
 
-### 1. Download and Install the Tanzu CLI
+#### Remove Old Tanzu CLI
 
 ```shell
-tar -xvf tanzu-framework-darwin-amd64.tar
+rm -rf $HOME/tanzu/cli        # Remove previously downloaded cli files
+sudo rm /usr/local/bin/tanzu  # Remove CLI binary (executable)
+rm -rf ~/.config/tanzu/       # current location # Remove config directory
+rm -rf ~/.tanzu/              # old location # Remove config directory
+rm -rf ~/.cache/tanzu         # remove cached catalog.yaml
+rm -rf ~/Library/Application\ Support/tanzu-cli/* # Remove plug-ins
 ```
-```shell
-ls cli
-accelerator/   apps/          core/          manifest.yaml  package/       secret/        services/
-```
+
+### 1. Download and Install the Tanzu CLI
+
 
 ## References
 
