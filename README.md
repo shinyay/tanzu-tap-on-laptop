@@ -30,7 +30,7 @@
   - [Docker Hub](https://hub.docker.com/)
   - [Tanzu Network](https://network.tanzu.vmware.com/)
 
-#### Remove Old Tanzu CLI
+#### 0. Remove Old Tanzu CLI
 
 ```shell
 rm -rf $HOME/tanzu/cli        # Remove previously downloaded cli files
