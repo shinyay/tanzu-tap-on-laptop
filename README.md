@@ -193,6 +193,8 @@ set -x DOCKER_USERNAME '' # < insert your docker username
 set -x DOCKER_PASSWORD '' # < insert your docker password
 ```
 
+Create the Kubernetes namespace used by the Tanzu Application Platform installation
+
 ```shell
 kubectl create ns $TAP_NAMESPACE 
 ```
