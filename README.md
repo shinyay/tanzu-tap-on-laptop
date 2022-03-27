@@ -102,6 +102,18 @@ tanzu plugin list
 minikube start --cpus='8' --memory='12g' --kubernetes-version='1.22.6'
 ```
 
+```shell
+minikube ip
+```
+
+```shell
+sudo /etc/hosts
+```
+
+```shell
+<your-minikube-ip-address> tap-gui.example.com tanzu-java-web-app.default.apps.example.com
+```
+
 ## References
 
 ## Licence
