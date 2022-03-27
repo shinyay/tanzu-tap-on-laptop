@@ -211,6 +211,8 @@ tanzu secret registry add tap-registry \
   --yes 
 ```
 
+Add a repository record for the Tanzu Application Platform package repository
+
 ```shell
 tanzu package repository add tanzu-tap-repository \
   --url $INSTALL_REGISTRY_HOSTNAME/tanzu-application-platform/tap-packages:$TAP_VERSION \
