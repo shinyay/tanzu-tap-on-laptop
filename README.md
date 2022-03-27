@@ -80,6 +80,22 @@ Installing plugin 'services:v0.1.2'
 ✔  successfully installed 'all' plugin
 ```
 
+```shell
+tanzu plugin list
+```
+
+```shell
+  NAME                DESCRIPTION                                                        SCOPE       DISCOVERY  VERSION  STATUS
+  login               Login to the platform                                              Standalone  default    v0.11.1  not installed
+  management-cluster  Kubernetes management-cluster operations                           Standalone  default    v0.11.1  not installed
+  package             Tanzu package management                                           Standalone  default    v0.11.1  installed
+  pinniped-auth       Pinniped authentication operations (usually not directly invoked)  Standalone  default    v0.11.1  not installed
+  secret              Tanzu secret management                                            Standalone  default    v0.11.1  installed
+  services            Discover Service Types and manage Service Instances (ALPHA)        Standalone             v0.1.2   installed
+  accelerator         Manage accelerators in a Kubernetes cluster                        Standalone             v1.0.1   installed
+  apps                Applications on Kubernetes                                         Standalone             v0.4.1   installed
+```
+
 ## References
 
 ## Licence
