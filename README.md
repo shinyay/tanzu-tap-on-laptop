@@ -199,6 +199,8 @@ Create the Kubernetes namespace used by the Tanzu Application Platform installat
 kubectl create ns $TAP_NAMESPACE 
 ```
 
+Add the credentials used to pull the Tanzu Application Platform images from the Tanzu Network
+
 ```shell
 tanzu secret registry add tap-registry \
   --username $INSTALL_REGISTRY_USERNAME \
