@@ -43,6 +43,8 @@ rm -rf ~/Library/Application\ Support/tanzu-cli/* # Remove plug-ins
 
 ### 1. Download and Install the Tanzu CLI
 
+Instrall Tanzu CLI
+
 ```shell
 mkdir $HOME/tanzu
 tar -xvf tanzu-framework-darwin-amd64.tar -C $HOME/tanzu
@@ -50,6 +52,8 @@ set -x TANZU_CLI_NO_INIT true
 cd $HOME/tanzu
 sudo install cli/core/v0.11.1/tanzu-core-darwin_amd64  /usr/local/bin/tanzu
 ```
+
+Check Tanzu CLI Version
 
 ```shell
 tanzu version
@@ -59,6 +63,21 @@ tanzu version
 version: v0.11.1
 buildDate: 2022-02-14
 sha: 4d578570
+```
+
+Install Tanzu CLI Plugins
+
+```shell
+tanzu plugin install --local cli all
+```
+
+```shell
+Installing plugin 'package:v0.11.1'
+Installing plugin 'secret:v0.11.1'
+Installing plugin 'apps:v0.4.1'
+Installing plugin 'accelerator:v1.0.1'
+Installing plugin 'services:v0.1.2'
+✔  successfully installed 'all' plugin
 ```
 
 ## References
