@@ -96,6 +96,12 @@ tanzu plugin list
   apps                Applications on Kubernetes                                         Standalone             v0.4.1   installed
 ```
 
+### 2. Run Minikube
+
+```shell
+minikube start --cpus='8' --memory='12g' --kubernetes-version='1.22.6'
+```
+
 ## References
 
 ## Licence
