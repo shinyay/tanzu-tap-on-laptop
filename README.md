@@ -169,6 +169,37 @@ set -x DOCKER_PASSWORD '' # < insert your docker password
 kubectl create ns $TAP_NAMESPACE 
 ```
 
+```shell
+tanzu secret registry add tap-registry \
+  --username $INSTALL_REGISTRY_USERNAME \
+  --password $INSTALL_REGISTRY_PASSWORD \
+  --server $INSTALL_REGISTRY_HOSTNAME \
+  --namespace $TAP_NAMESPACE \
+  --export-to-all-namespaces \
+  --yes 
+```
+
+```shell
+tanzu package repository add tanzu-tap-repository \
+  --url $INSTALL_REGISTRY_HOSTNAME/tanzu-application-platform/tap-packages:$TAP_VERSION \
+  --namespace $TAP_NAMESPACE 
+```
+
+```shell
+tanzu package repository get tanzu-tap-repository --namespace $TAP_NAMESPACE 
+```
+
+```shell
+tanzu package available list --namespace $TAP_NAMESPACE 
+```
+
+Download a configuration file template
+
+```shell
+curl -o tap-values.yml https://raw.githubusercontent.com/benwilcock/tanzu-application-platform-scripts/main/minikube-win/template-tap-values.yml
+```
+
+
 ## References
 
 ## Licence
