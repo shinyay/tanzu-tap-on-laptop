@@ -98,6 +98,8 @@ tanzu plugin list
 
 ### 2. Run Minikube
 
+Start Minikube with 8 CPUs, 12 GB RAM, and version 1.22 of Kubernetes
+
 ```shell
 minikube start --cpus='8' --memory='12g' --kubernetes-version='1.22.6'
 ```
