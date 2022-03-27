@@ -122,6 +122,13 @@ Open the Minikube tunnel
 minikube tunnel
 ```
 
+### 3. Install Cluster Essentials for VMware Tanzu onto Minikube
+
+Download
+
+- [Cluster Essentials for VMware Tanzu](https://network.tanzu.vmware.com/products/tanzu-cluster-essentials)
+  - tanzu-cluster-essentials-darwin-amd64-1.0.0.tgz
+
 ## References
 
 ## Licence
