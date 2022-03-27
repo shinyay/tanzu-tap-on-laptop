@@ -250,6 +250,14 @@ cnrs:
   domain_name: "apps.example.com"
 ```
 
+Install the Tanzu Application Platform onto Minikube
+
+```shell
+tanzu package install tap -p tap.tanzu.vmware.com -v $TAP_VERSION \
+  --values-file tap-values.yml \
+  --namespace $TAP_NAMESPACE
+```
+
 ## References
 
 ## Licence
