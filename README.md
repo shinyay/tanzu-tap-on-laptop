@@ -224,7 +224,49 @@ tanzu package repository get tanzu-tap-repository --namespace $TAP_NAMESPACE
 ```
 
 ```shell
+NAME:          tanzu-tap-repository
+VERSION:       1213
+REPOSITORY:    registry.tanzu.vmware.com/tanzu-application-platform/tap-packages
+TAG:           1.0.2
+STATUS:        Reconcile succeeded
+REASON:
+```
+
+```shell
 tanzu package available list --namespace $TAP_NAMESPACE 
+```
+
+```shell
+  NAME                                                 DISPLAY-NAME                                                              SHORT-DESCRIPTION                                                                                                                                              LATEST-VERSION
+  accelerator.apps.tanzu.vmware.com                    Application Accelerator for VMware Tanzu                                  Used to create new projects and configurations.                                                                                                                1.0.2
+  api-portal.tanzu.vmware.com                          API portal                                                                A unified user interface to enable search, discovery and try-out of API endpoints at ease.                                                                     1.0.9
+  build.appliveview.tanzu.vmware.com                   Application Live View Conventions for VMware Tanzu                        Application Live View convention server                                                                                                                        1.0.2
+  buildservice.tanzu.vmware.com                        Tanzu Build Service                                                       Tanzu Build Service enables the building and automation of containerized software workflows securely and at scale.                                             1.4.3
+  cartographer.tanzu.vmware.com                        Cartographer                                                              Kubernetes native Supply Chain Choreographer.                                                                                                                  0.2.2
+  cnrs.tanzu.vmware.com                                Cloud Native Runtimes                                                     Cloud Native Runtimes is a serverless runtime based on Knative                                                                                                 1.1.1
+  controller.conventions.apps.tanzu.vmware.com         Convention Service for VMware Tanzu                                       Convention Service enables app operators to consistently apply desired runtime configurations to fleets of workloads.                                          0.5.1
+  controller.source.apps.tanzu.vmware.com              Tanzu Source Controller                                                   Tanzu Source Controller enables workload create/update from source code.                                                                                       0.2.1
+  developer-conventions.tanzu.vmware.com               Tanzu App Platform Developer Conventions                                  Developer Conventions                                                                                                                                          0.5.0
+  fluxcd.source.controller.tanzu.vmware.com            Flux Source Controller                                                    The source-controller is a Kubernetes operator, specialised in artifacts acquisition from external sources such as Git, Helm repositories and S3 buckets.      0.16.3
+  grype.scanning.apps.tanzu.vmware.com                 Grype for Supply Chain Security Tools - Scan                              Default scan templates using Anchore Grype                                                                                                                     1.0.1
+  image-policy-webhook.signing.apps.tanzu.vmware.com   Image Policy Webhook                                                      Image Policy Webhook enables defining of a policy to restrict unsigned container images.                                                                       1.0.2
+  learningcenter.tanzu.vmware.com                      Learning Center for Tanzu Application Platform                            Guided technical workshops                                                                                                                                     0.1.1
+  metadata-store.apps.tanzu.vmware.com                 Supply Chain Security Tools - Store                                       Post SBoMs and query for image, package, and vulnerability metadata.                                                                                           1.0.2
+  ootb-delivery-basic.tanzu.vmware.com                 Tanzu App Platform Out of The Box Delivery Basic                          Out of The Box Delivery Basic.                                                                                                                                 0.6.1
+  ootb-supply-chain-basic.tanzu.vmware.com             Tanzu App Platform Out of The Box Supply Chain Basic                      Out of The Box Supply Chain Basic.                                                                                                                             0.6.1
+  ootb-supply-chain-testing-scanning.tanzu.vmware.com  Tanzu App Platform Out of The Box Supply Chain with Testing and Scanning  Out of The Box Supply Chain with Testing and Scanning.                                                                                                         0.6.1
+  ootb-supply-chain-testing.tanzu.vmware.com           Tanzu App Platform Out of The Box Supply Chain with Testing               Out of The Box Supply Chain with Testing.                                                                                                                      0.6.1
+  ootb-templates.tanzu.vmware.com                      Tanzu App Platform Out of The Box Templates                               Out of The Box Templates.                                                                                                                                      0.6.1
+  run.appliveview.tanzu.vmware.com                     Application Live View for VMware Tanzu                                    App for monitoring and troubleshooting running apps                                                                                                            1.0.2
+  scanning.apps.tanzu.vmware.com                       Supply Chain Security Tools - Scan                                        Scan for vulnerabilities and enforce policies directly within Kubernetes native Supply Chains.                                                                 1.0.1
+  service-bindings.labs.vmware.com                     Service Bindings for Kubernetes                                           Service Bindings for Kubernetes implements the Service Binding Specification.                                                                                  0.6.1
+  services-toolkit.tanzu.vmware.com                    Services Toolkit                                                          The Services Toolkit enables the management, lifecycle, discoverability and connectivity of Service Resources (databases, message queues, DNS records, etc.).  0.5.1
+  spring-boot-conventions.tanzu.vmware.com             Tanzu Spring Boot Conventions Server                                      Default Spring Boot convention server.                                                                                                                         0.3.0
+  tap-gui.tanzu.vmware.com                             Tanzu Application Platform GUI                                            web app graphical user interface for Tanzu Application Platform                                                                                                1.0.2
+  tap-telemetry.tanzu.vmware.com                       Telemetry Collector for Tanzu Application Platform                        Tanzu Application Plaform Telemetry                                                                                                                            0.1.4
+  tap.tanzu.vmware.com                                 Tanzu Application Platform                                                Package to install a set of TAP components to get you started based on your use case.                                                                          1.0.2
+  tekton.tanzu.vmware.com                              Tekton Pipelines                                                          Tekton Pipelines is a framework for creating CI/CD systems.                                                                                                    0.30.1
+  workshops.learningcenter.tanzu.vmware.com            Workshop Building Tutorial                                                Workshop Building Tutorial                                                                                                                                     0.1.1
 ```
 
 Download a configuration file template
