@@ -165,6 +165,10 @@ set -x DOCKER_USERNAME '' # < insert your docker username
 set -x DOCKER_PASSWORD '' # < insert your docker password
 ```
 
+```shell
+kubectl create ns $TAP_NAMESPACE 
+```
+
 ## References
 
 ## Licence
