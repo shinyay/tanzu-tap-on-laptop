@@ -141,6 +141,11 @@ set -x INSTALL_REGISTRY_USERNAME <tanzunet-username>
 set -x INSTALL_REGISTRY_PASSWORD <tanzunet-password>
 ```
 
+```shell
+cd $HOME/tanzu/essential
+./install.sh
+```
+
 ## References
 
 ## Licence
