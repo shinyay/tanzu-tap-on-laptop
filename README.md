@@ -129,6 +129,18 @@ Download
 - [Cluster Essentials for VMware Tanzu](https://network.tanzu.vmware.com/products/tanzu-cluster-essentials)
   - tanzu-cluster-essentials-darwin-amd64-1.0.0.tgz
 
+```shell
+mkdir $HOME/tanzu/essential
+tar xzvf tanzu-cluster-essentials-darwin-amd64-1.0.0.tgz -C $HOME/tanzu/essential
+```
+
+```shell
+set -x INSTALL_BUNDLE registry.tanzu.vmware.com/tanzu-cluster-essentials/cluster-essentials-bundle@sha256:82dfaf70656b54dcba0d4def85ccae1578ff27054e7533d08320244af7fb0343
+set -x INSTALL_REGISTRY_HOSTNAME registry.tanzu.vmware.com
+set -x INSTALL_REGISTRY_USERNAME <tanzunet-username>
+set -x INSTALL_REGISTRY_PASSWORD <tanzunet-password>
+```
+
 ## References
 
 ## Licence
