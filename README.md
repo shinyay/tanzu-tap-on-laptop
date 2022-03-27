@@ -32,6 +32,14 @@
 
 ### 1. Download and Install the Tanzu CLI
 
+```shell
+tar -xvf tanzu-framework-darwin-amd64.tar
+```
+```shell
+ls cli
+accelerator/   apps/          core/          manifest.yaml  package/       secret/        services/
+```
+
 ## References
 
 ## Licence
