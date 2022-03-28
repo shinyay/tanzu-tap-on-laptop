@@ -346,6 +346,9 @@ tanzu package installed list -A
   conventions-controller    controller.conventions.apps.tanzu.vmware.com  0.5.1            Reconcile succeeded                                                   tap-install
 ```
 
+```shell
+tanzu package installed get contour --namespace $TAP_NAMESPACE
+```
 
 ## References
 
