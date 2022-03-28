@@ -361,6 +361,34 @@ I0328 00:42:56.377390    6478 request.go:665] Waited for 4.592470949s due to cli
 kapp: Error: Timed out waiting after 5m0s
 ```
 
+Completed
+
+```shell
+  NAME                      PACKAGE-NAME                                  PACKAGE-VERSION  STATUS               NAMESPACE
+  accelerator               accelerator.apps.tanzu.vmware.com             1.0.2            Reconcile succeeded  tap-install
+  appliveview               run.appliveview.tanzu.vmware.com              1.0.2            Reconcile succeeded  tap-install
+  appliveview-conventions   build.appliveview.tanzu.vmware.com            1.0.2            Reconcile succeeded  tap-install
+  buildservice              buildservice.tanzu.vmware.com                 1.4.3            Reconcile succeeded  tap-install
+  cartographer              cartographer.tanzu.vmware.com                 0.2.2            Reconcile succeeded  tap-install
+  cert-manager              cert-manager.tanzu.vmware.com                 1.5.3+tap.1      Reconcile succeeded  tap-install
+  cnrs                      cnrs.tanzu.vmware.com                         1.1.1            Reconcile succeeded  tap-install
+  contour                   contour.tanzu.vmware.com                      1.18.2+tap.1     Reconcile succeeded  tap-install
+  conventions-controller    controller.conventions.apps.tanzu.vmware.com  0.5.1            Reconcile succeeded  tap-install
+  developer-conventions     developer-conventions.tanzu.vmware.com        0.5.0            Reconcile succeeded  tap-install
+  fluxcd-source-controller  fluxcd.source.controller.tanzu.vmware.com     0.16.3           Reconcile succeeded  tap-install
+  ootb-delivery-basic       ootb-delivery-basic.tanzu.vmware.com          0.6.1            Reconcile succeeded  tap-install
+  ootb-supply-chain-basic   ootb-supply-chain-basic.tanzu.vmware.com      0.6.1            Reconcile succeeded  tap-install
+  ootb-templates            ootb-templates.tanzu.vmware.com               0.6.1            Reconcile succeeded  tap-install
+  service-bindings          service-bindings.labs.vmware.com              0.6.1            Reconcile succeeded  tap-install
+  services-toolkit          services-toolkit.tanzu.vmware.com             0.5.1            Reconcile succeeded  tap-install
+  source-controller         controller.source.apps.tanzu.vmware.com       0.2.1            Reconcile succeeded  tap-install
+  spring-boot-conventions   spring-boot-conventions.tanzu.vmware.com      0.3.0            Reconcile succeeded  tap-install
+  tap                       tap.tanzu.vmware.com                          1.0.2            Reconcile succeeded  tap-install
+  tap-gui                   tap-gui.tanzu.vmware.com                      1.0.2            Reconcile succeeded  tap-install
+  tap-telemetry             tap-telemetry.tanzu.vmware.com                0.1.4            Reconcile succeeded  tap-install
+  tekton-pipelines          tekton.tanzu.vmware.com                       0.30.1           Reconcile succeeded  tap-install
+```
+
 ## References
 
 ## Licence
