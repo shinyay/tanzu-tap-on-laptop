@@ -334,6 +334,19 @@ tanzu package install tap -p tap.tanzu.vmware.com -v $TAP_VERSION \
   --namespace $TAP_NAMESPACE
 ```
 
+Troubleshooting
+
+```shell
+tanzu package installed list -A
+```
+
+```shell
+  cnrs                      cnrs.tanzu.vmware.com                         1.1.1            Reconcile succeeded                                                   tap-install
+  contour                   contour.tanzu.vmware.com                      1.18.2+tap.1     Reconcile failed: Error (see .status.usefulErrorMessage for details)  tap-install
+  conventions-controller    controller.conventions.apps.tanzu.vmware.com  0.5.1            Reconcile succeeded                                                   tap-install
+```
+
+
 ## References
 
 ## Licence
