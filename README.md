@@ -350,6 +350,17 @@ tanzu package installed list -A
 tanzu package installed get contour --namespace $TAP_NAMESPACE
 ```
 
+```shell
+NAME:                    contour
+PACKAGE-NAME:            contour.tanzu.vmware.com
+PACKAGE-VERSION:         1.18.2+tap.1
+STATUS:                  Reconcile failed: Error (see .status.usefulErrorMessage for details)
+CONDITIONS:              [{ReconcileFailed True  Error (see .status.usefulErrorMessage for details)}]
+USEFUL-ERROR-MESSAGE:    I0328 00:42:46.375812    6478 request.go:665] Waited for 1.049046456s due to client-side throttling, not priority and fairness, request: GET:https://10.96.0.1:443/apis/internal.packaging.carvel.dev/v1alpha1?timeout=32s
+I0328 00:42:56.377390    6478 request.go:665] Waited for 4.592470949s due to client-side throttling, not priority and fairness, request: GET:https://10.96.0.1:443/apis/bindings.labs.vmware.com/v1alpha1/provisionedservices?labelSelector=kapp.k14s.io%2Fapp%3D1648425534876913546
+kapp: Error: Timed out waiting after 5m0s
+```
+
 ## References
 
 ## Licence
