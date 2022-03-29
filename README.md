@@ -415,6 +415,16 @@ set -x TAP_DEV_NAMESPACE "developer"
 kubectl create ns $TAP_DEV_NAMESPACE
 ```
 
+Add a developer registory
+
+```shell
+tanzu secret registry add registry-credentials \
+  --server $DOCKER_SERVER \
+  --username $DOCKER_USERNAME \
+  --password $DOCKER_PASSWORD \
+  --namespace $TAP_DEV_NAMESPACE 
+```
+
 ## References
 
 ## Licence
