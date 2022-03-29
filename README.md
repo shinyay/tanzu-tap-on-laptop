@@ -334,6 +334,17 @@ tanzu package install tap -p tap.tanzu.vmware.com -v $TAP_VERSION \
   --namespace $TAP_NAMESPACE
 ```
 
+It takes around 15 mins to succeed
+
+```shell
+ Added installed package 'tap'
+
+________________________________________________________
+Executed in  848.52 secs    fish           external
+   usr time    1.16 secs    0.15 millis    1.16 secs
+   sys time    0.89 secs    1.37 millis    0.89 secs
+```
+
 Troubleshooting
 
 ```shell
@@ -388,6 +399,10 @@ Completed
   tap-telemetry             tap-telemetry.tanzu.vmware.com                0.1.4            Reconcile succeeded  tap-install
   tekton-pipelines          tekton.tanzu.vmware.com                       0.30.1           Reconcile succeeded  tap-install
 ```
+
+Checkout UI
+
+- [](http://tap-gui.example.com/)
 
 ## References
 
