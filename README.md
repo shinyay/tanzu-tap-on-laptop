@@ -463,4 +463,5 @@ Released under the [MIT license](https://gist.githubusercontent.com/shinyay/56e5
 ## Author
 
 [shinyay](https://github.com/shinyay)
-- twitter: https://twitter.com/yanashin18618
+
+- twitter: <https://twitter.com/yanashin18618>
