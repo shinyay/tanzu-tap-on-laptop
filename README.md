@@ -402,7 +402,8 @@ Completed
 
 Checkout UI
 
-- [](http://tap-gui.example.com/)
+- [GUI](http://tap-gui.example.com/)
+![TAP-GUI](https://user-images.githubusercontent.com/3072734/160526497-a46e65ba-938d-4f43-a6a7-30b0ad0676d2.png)
 
 ## References
 
