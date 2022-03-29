@@ -448,6 +448,12 @@ tanzu apps workload create tanzu-java-web-app \
   --yes 
 ```
 
+Check the progress of the workload's deployment
+
+```shell
+tanzu apps workload get tanzu-java-web-app --namespace $TAP_DEV_NAMESPACE
+```
+
 ## References
 
 ## Licence
