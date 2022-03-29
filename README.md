@@ -425,6 +425,29 @@ tanzu secret registry add registry-credentials \
   --namespace $TAP_DEV_NAMESPACE 
 ```
 
+Add Service Account
+
+```shell
+curl -o serviceaccounts.yml https://raw.githubusercontent.com/benwilcock/tanzu-application-platform-scripts/main/minikube-win/serviceaccounts.yml 
+kubectl -n $TAP_DEV_NAMESPACE apply -f "serviceaccounts.yml" 
+```
+
+### 6. Run a Workload
+
+Run a new application workload on the Tanzu Application Platform
+
+```shell
+tanzu apps workload create tanzu-java-web-app \
+  --git-repo https://github.com/sample-accelerators/tanzu-java-web-app \
+  --git-branch main \
+  --type web \
+  --label app.kubernetes.io/part-of=tanzu-java-web-app \
+  --label tanzu.app.live.view=true \
+  --label tanzu.app.live.view.application.name=tanzu-java-web-app \
+  --namespace $TAP_DEV_NAMESPACE \
+  --yes 
+```
+
 ## References
 
 ## Licence
