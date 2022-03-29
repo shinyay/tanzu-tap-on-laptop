@@ -404,6 +404,7 @@ Checkout UI
 
 - [GUI](http://tap-gui.example.com/)
 ![TAP-GUI](https://user-images.githubusercontent.com/3072734/160526497-a46e65ba-938d-4f43-a6a7-30b0ad0676d2.png)
+![Catalog](https://user-images.githubusercontent.com/3072734/160527799-2dd30cdc-0055-4eb5-9566-3ec3cf6c59b7.png)
 
 ## References
 
